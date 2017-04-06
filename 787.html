@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>787- History and Design</title>
+<link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+</head>
+<body>
+<style>
+
+#banner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 99.7%;
+  height: 125px;
+  z-index: -1;
+  border: 2px solid black;
+  border-radius: 5px; 
+  margin-top: 1px;
+
+}
+.Dropbtn {
+    background-color: white;
+    color: grey;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+
+.Dropbtn:hover, .Dropbtn:focus {
+    background-color: #black;
+}
+
+
+.boeingDropdown {
+    position: absolute;
+    display: inline-block;
+    top: 72px;
+    left: 66%;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+
+}
+.airbusDropdown {
+	position: absolute;
+	display: inline-block;
+	top: 72px;
+	left: 80%;
+       opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+}
+
+.Dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: Arial;
+    font-size: 16px;
+
+}
+
+.Dropdown-content a {
+    color: grey;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.airbusDropdown a:hover {color: black;}
+.boeingDropdown a:hover {color: black}
+.Dropbtn:hover {color: black; font-weight: bold;}
+.airbusDropdown a:hover {background-color: #d9d9d9}
+.boeingDropdown a:hover {background-color: #d9d9d9}
+.show {display:block;}
+a:hover {color: black !important; font-weight: bold;}
+a:link {color: grey;}
+</style>
+
+  <img id="banner"/>
+  <img style="position:absolute; top:5px; left:44.5%; width:200px; height:97px" src="Logo.png">
+  <a href=file:///C:/Users/RohitCherian/Documents/HTML%20Website/Home.html style="color: grey; position:absolute; top:85px; left:15%; font-family:Arial; text-decoration:none;">HOME</a>
+  
+  <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/About.html" id="about" style="color:grey; position:absolute; top:85px; left:34%; font-family:Arial; text-decoration:none;">ABOUT</a>
+  <IMG STYLE="position:absolute; TOP:130px; LEFT:0px; WIDTH:100%; HEIGHT:600px" SRC="http://www.boeing.com/resources/boeingdotcom/commercial/787/family/assets/images/787-10-specs-bg.jpg">
+  <h1 style="position:absolute; top:200px; left:48%; color:white; font-family:Arial; font-size:350%"><b>787</b><h1> 
+
+<div class="boeingDropdown">
+<button onclick="boeingFunction()" class="Dropbtn" style="color:black; font-weight:bold;">BOEING</button>
+  <div id="boeingDropdown" class="Dropdown-content">
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/BoeingOverview.html">Overview</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/707.html">707</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/717.html">717</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/727.html">727</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/737.html">737</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/747.html">747</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/757.html">757</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/767.html">767</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/777.html">777</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/787.html">787</a>
+  </div>
+ </div>
+<div class="airbusDropdown">
+<button onclick="airbusFunction()" class="Dropbtn">AIRBUS</button>
+<div id="airbusDropdown" class="Dropdown-content">
+  <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/AirbusOverview.html">Overview</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A300.html">A300</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A310.html">A310</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A318.html">A318</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A319.html">A319</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A320.html">A320</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A321.html">A321</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A330.html">A330</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A340.html">A340</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A350.html">A350</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A380.html">A380</a>
+  </div>
+</div>
+
+
+  <h6 style= "font-family:Arial; color:grey; font-size:16px; position:absolute; top:975px; font-weight:lighter;"><b style="color:black;">Overview:</b> The Boeing 707 was a mid-sized four-engine jet, the first commercial one by Boeing. It was first introduce in October of 1958, and production was stopped in 1979. Trans World Airlines, Continental Airlines, Pan Am Airlines, and Saha Airlines were the main buyers of this aircraft. The 707 had Pratt & Whitney JT3D engines, which were later a reason for its termination in production. All 865 707s were made at Boeing's main factory at the time in Everett, Washington. Alongside commercial use, the 707 was requested by the US millitary for weather surveillance, command, control, and communications. The 707s production was stopped once the new 727 took off, and was a sucess in the airplane market. The features of the new 727s cockpit were far more advance than the ones of the 707, for it didn't even have a radar on a screen. Also, the 707s engines were very fuel-hungry, making it an expensive plane to maintain. The nose design of the 707 has been used in later models such as the 727, 737, and 757. By 2014, only ten recorded 707s were being used. Nevertheless, the legacy of the 707 will live on as one of the most influental commercial aircrafts ever. </h6>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function boeingFunction() {
+    document.getElementById("boeingDropdown").classList.toggle("show");
+}
+function airbusFunction() {
+    document.getElementById("airbusDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.Dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("Dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>

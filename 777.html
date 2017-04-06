@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>777- History and Design</title>
+<link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+</head>
+<body>
+<style>
+
+#banner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 99.7%;
+  height: 125px;
+  z-index: -1;
+  border: 2px solid black;
+  border-radius: 5px; 
+  margin-top: 1px;
+
+}
+.Dropbtn {
+    background-color: white;
+    color: grey;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+
+.Dropbtn:hover, .Dropbtn:focus {
+    background-color: #black;
+}
+
+
+.boeingDropdown {
+    position: absolute;
+    display: inline-block;
+    top: 72px;
+    left: 66%;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+
+}
+.airbusDropdown {
+	position: absolute;
+	display: inline-block;
+	top: 72px;
+	left: 80%;
+       opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+}
+
+.Dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: Arial;
+    font-size: 16px;
+
+}
+
+.Dropdown-content a {
+    color: grey;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.airbusDropdown a:hover {color: black;}
+.boeingDropdown a:hover {color: black}
+.Dropbtn:hover {color: black; font-weight: bold;}
+.airbusDropdown a:hover {background-color: #d9d9d9}
+.boeingDropdown a:hover {background-color: #d9d9d9}
+.show {display:block;}
+a:hover {color: black !important; font-weight: bold;}
+a:link {color: grey;}
+</style>
+
+  <img id="banner"/>
+  <img style="position:absolute; top:5px; left:44.5%; width:200px; height:97px" src="Logo.png">
+  <a href=file:///C:/Users/RohitCherian/Documents/HTML%20Website/Home.html style="color: grey; position:absolute; top:85px; left:15%; font-family:Arial; text-decoration:none;">HOME</a>
+  
+  <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/About.html" id="about" style="color:grey; position:absolute; top:85px; left:34%; font-family:Arial; text-decoration:none;">ABOUT</a>
+  <IMG STYLE="position:absolute; TOP:130px; LEFT:0px; WIDTH:100%; HEIGHT:750px" SRC="http://www.boeing.com/resources/boeingdotcom/commercial/777/assets/images/marquee-777.jpg">
+  <h1 style="position:absolute; top:450px; left:48%; color:white; font-family:Arial; font-size:350%"><b>777</b><h1> 
+
+<div class="boeingDropdown">
+<button onclick="boeingFunction()" class="Dropbtn" style="color:black; font-weight:bold;">BOEING</button>
+  <div id="boeingDropdown" class="Dropdown-content">
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/BoeingOverview.html">Overview</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/707.html">707</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/717.html">717</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/727.html">727</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/737.html">737</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/747.html">747</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/757.html">757</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/767.html">767</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/777.html">777</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/787.html">787</a>
+  </div>
+ </div>
+<div class="airbusDropdown">
+<button onclick="airbusFunction()" class="Dropbtn">AIRBUS</button>
+<div id="airbusDropdown" class="Dropdown-content">
+  <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/AirbusOverview.html">Overview</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A300.html">A300</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A310.html">A310</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A318.html">A318</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A319.html">A319</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A320.html">A320</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A321.html">A321</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A330.html">A330</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A340.html">A340</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A350.html">A350</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A380.html">A380</a>
+  </div>
+</div>
+
+
+  <h6 style= "font-family:Arial; color:grey; font-size:16px; position:absolute; top:875px; font-weight:lighter;"><b style="color:black;">Overview:</b> The famous triple seven is known for its super long range, as Air New Zealand flies it from Auckland to LA, and United flies it from San Francisco all the way to New Delhi! The 777 fuselage is almost a carbon copy of the 767s, and like the 767, uses GE, Pratt & Whitney, or Rolls-Royce engines (only more powerful ones). Another reason the 777 can fly way longer than the 767 is because of its weight. It being lighter requires less fuel per mile. These pros of the 777, and especially the new 777x comes at a price; being one of the most expensive aircrafts at $320 million! Emirates, United, Cathay Pacific, and Air France are the primary users of the triple seven. The next generation 777x, to be released in 2020 is to have new composite wings almost a third lighter than 777-9 wings. The 777 is expected to stay as a popular long-haul plane in the years to come. </h6>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function boeingFunction() {
+    document.getElementById("boeingDropdown").classList.toggle("show");
+}
+function airbusFunction() {
+    document.getElementById("airbusDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.Dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("Dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>

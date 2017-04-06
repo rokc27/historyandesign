@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>757- History and Design</title>
+<link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+</head>
+<body>
+<style>
+
+#banner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 99.7%;
+  height: 125px;
+  z-index: -1;
+  border: 2px solid black;
+  border-radius: 5px; 
+  margin-top: 1px;
+
+}
+.Dropbtn {
+    background-color: white;
+    color: grey;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+
+.Dropbtn:hover, .Dropbtn:focus {
+    background-color: #black;
+}
+
+
+.boeingDropdown {
+    position: absolute;
+    display: inline-block;
+    top: 72px;
+    left: 66%;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+
+}
+.airbusDropdown {
+	position: absolute;
+	display: inline-block;
+	top: 72px;
+	left: 80%;
+       opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+}
+
+.Dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: Arial;
+    font-size: 16px;
+
+}
+
+.Dropdown-content a {
+    color: grey;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.airbusDropdown a:hover {color: black;}
+.boeingDropdown a:hover {color: black}
+.Dropbtn:hover {color: black; font-weight: bold;}
+.airbusDropdown a:hover {background-color: #d9d9d9}
+.boeingDropdown a:hover {background-color: #d9d9d9}
+.show {display:block;}
+a:hover {color: black !important; font-weight: bold;}
+a:link {color: grey;}
+</style>
+
+  <img id="banner"/>
+  <img style="position:absolute; top:5px; left:44.5%; width:200px; height:97px" src="Logo.png">
+  <a href=file:///C:/Users/RohitCherian/Documents/HTML%20Website/Home.html style="color: grey; position:absolute; top:85px; left:15%; font-family:Arial; text-decoration:none;">HOME</a>
+  
+  <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/About.html" id="about" style="color:grey; position:absolute; top:85px; left:34%; font-family:Arial; text-decoration:none;">ABOUT</a>
+  <IMG STYLE="position:absolute; TOP:130px; LEFT:0px; WIDTH:100%; HEIGHT:500px" SRC="http://www.boeing.com/resources/boeingdotcom/history/images/757_hero_1280x436_2.jpg">
+  <h1 style="position:absolute; top:200px; left:48%; color:white; font-family:Arial; font-size:350%"><b>757</b><h1> 
+
+<div class="boeingDropdown">
+<button onclick="boeingFunction()" class="Dropbtn" style="color:black; font-weight:bold;">BOEING</button>
+  <div id="boeingDropdown" class="Dropdown-content">
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/BoeingOverview.html">Overview</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/707.html">707</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/717.html">717</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/727.html">727</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/737.html">737</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/747.html">747</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/757.html">757</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/767.html">767</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/777.html">777</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/787.html">787</a>
+  </div>
+ </div>
+<div class="airbusDropdown">
+<button onclick="airbusFunction()" class="Dropbtn">AIRBUS</button>
+<div id="airbusDropdown" class="Dropdown-content">
+  <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/AirbusOverview.html">Overview</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A300.html">A300</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A310.html">A310</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A318.html">A318</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A319.html">A319</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A320.html">A320</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A321.html">A321</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A330.html">A330</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A340.html">A340</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A350.html">A350</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A380.html">A380</a>
+  </div>
+</div>
+
+
+  <h6 style= "font-family:Arial; color:grey; font-size:16px; position:absolute; top:600px; font-weight:lighter;"><b style="color:black;">Overview:</b> The Boeing 757 was a mid-size narrow body twin jet airliner produced by Boeing between 1981 and 2004. The 757 was produced in two vastly different fuselage lengths. The original 757-100 and 200 average for a fuselage length, but the new 757-300 was unusually long, and still has the longest fuselage today. The 757 had Pratt & Whitney PW2000 engines, and some had Rolls-Royce RB211 engines (like Donald Trump’s). Overall, the 757 wasn’t a huge success in the market, for it was supposed to compete with the booming A320 family, and it was unable to do so. </h6>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function boeingFunction() {
+    document.getElementById("boeingDropdown").classList.toggle("show");
+}
+function airbusFunction() {
+    document.getElementById("airbusDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.Dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("Dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>

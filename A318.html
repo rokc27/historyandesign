@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A318- History and Design</title>
+<link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+</head>
+<body>
+<style>
+
+#banner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 99.7%;
+  height: 125px;
+  z-index: -1;
+  border: 2px solid black;
+  border-radius: 5px; 
+  margin-top: 1px;
+
+}
+.Dropbtn {
+    background-color: white;
+    color: grey;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+
+.Dropbtn:hover, .Dropbtn:focus {
+    background-color: #black;
+}
+
+
+.boeingDropdown {
+    position: absolute;
+    display: inline-block;
+    top: 72px;
+    left: 66%;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+
+}
+.airbusDropdown {
+	position: absolute;
+	display: inline-block;
+	top: 72px;
+	left: 80%;
+       opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+}
+
+.Dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: Arial;
+    font-size: 16px;
+
+}
+
+.Dropdown-content a {
+    color: grey;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.airbusDropdown a:hover {color: black;}
+.boeingDropdown a:hover {color: black}
+.Dropbtn:hover {color: black; font-weight: bold;}
+.airbusDropdown a:hover {background-color: #d9d9d9}
+.boeingDropdown a:hover {background-color: #d9d9d9}
+.show {display:block;}
+a:hover {color: black !important; font-weight: bold;}
+a:link {color: grey;}
+</style>
+
+  <img id="banner"/>
+  <img style="position:absolute; top:5px; left:44.5%; width:200px; height:97px" src="Logo.png">
+  <a href=file:///C:/Users/RohitCherian/Documents/HTML%20Website/Home.html style="color: grey; position:absolute; top:85px; left:15%; font-family:Arial; text-decoration:none;">HOME</a>
+  
+  <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/About.html" id="about" style="color:grey; position:absolute; top:85px; left:34%; font-family:Arial; text-decoration:none;">ABOUT</a>
+  <IMG STYLE="position:absolute; TOP:130px; LEFT:0px; WIDTH:100%; HEIGHT:900px" SRC="http://www.airbus.com/fileadmin/_processed_/csm_A318_CFM_AIRBUS_V10_300dpi_c09cf1d67f.jpg">
+  <h1 style="position:absolute; top:280px; left:46%; color:white; font-family:Arial; font-size:350%"><b>A318</b><h1> 
+
+<div class="boeingDropdown">
+<button onclick="boeingFunction()" class="Dropbtn">BOEING</button>
+  <div id="boeingDropdown" class="Dropdown-content">
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/BoeingOverview.html">Overview</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/707.html">707</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/717.html">717</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/727.html">727</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/737.html">737</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/747.html">747</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/757.html">757</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/767.html">767</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/777.html">777</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/787.html">787</a>
+  </div>
+ </div>
+<div class="airbusDropdown">
+<button onclick="airbusFunction()" class="Dropbtn" style="font-weight:bold; color:black;">AIRBUS</button>
+<div id="airbusDropdown" class="Dropdown-content">
+  <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/AirbusOverview.html">Overview</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A300.html">A300</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A310.html">A310</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A318.html">A318</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A319.html">A319</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A320.html">A320</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A321.html">A321</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A330.html">A330</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A340.html">A340</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A350.html">A350</a>
+    <a href="file:///C:/Users/RohitCherian/Documents/HTML%20Website/A380.html">A380</a>
+  </div>
+</div>
+
+
+  <h6 style= "font-family:Arial; color:grey; font-size:16px; position:absolute; top:725px; font-weight:lighter;"><b style="color:black;">Overview:</b> Although less than half the age of Boeing, Airbus has risen to become the top airplane producer in Europe and Asia. Airbus started in 1970 in Blagnac, France by Roger Betellie and Felix Kracht. Airbus has factories in the UK, France, Germany, China, Spain, and even one in the US. Airbus is known for making the first fly-by-wire airliner, the A320, and the worlds biggest commercial aircraft, the A380.</h6>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function boeingFunction() {
+    document.getElementById("boeingDropdown").classList.toggle("show");
+}
+function airbusFunction() {
+    document.getElementById("airbusDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.Dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("Dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>
